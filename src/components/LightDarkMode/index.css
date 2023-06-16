@@ -1,0 +1,19 @@
+/* Write your CSS here */
+.container {
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  width: 50vw;
+  height: auto;
+  text-align: center;
+}
+.dark-heading {
+  color: #000000;
+}
+.dark-container {
+  background-color: #ffffff;
+}
+.dark-button {
+  background-color: #ffffff;
+  color: #000000;
+}
