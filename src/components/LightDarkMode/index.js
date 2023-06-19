@@ -3,23 +3,23 @@ import {Component} from 'react'
 import './index.css'
 
 class LightDarkMode extends Component {
-  state = {mode: "LightMode"}
+  state = {mode: "Light Mode"}
 
     onLight = () => {
-      this.setState(prevState => ({prevState.mode: prevState."LightMode"}))
+      this.setState({mode: 'Light Mode'})
     }
 
     onDark = () => {
-      this.setState(prevState => ({prevState.mode: prevState."DarkMode"}))
+      this.setState({mode: 'Dark Mode'})
     }
   }
 
   render() {  
-      const { mode } = this.state
+      const { mode } = this.state;
 
     return (
     <div className="container">
-    {mode === "LightMode" ? (<div className="dark-container">
+    {mode === 'Light Mode' ? (<div className="dark-container">
                 <h1 className="dark-heading">Click To Change Mode</h1>
                 <div>
                     <button type="button" className="dark-button" onClick={this.onDark}>
